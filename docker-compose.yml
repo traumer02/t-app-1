@@ -15,7 +15,6 @@ services:
       - t_network
     depends_on:
       - db
-      - redis
 
   nginx:
     image: nginx:alpine
@@ -43,15 +42,6 @@ services:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
-    networks:
-      - t_network
-
-  redis:
-    image: redis:7-alpine
-    container_name: t_app_redis
-    restart: unless-stopped
-    ports:
-      - "6379:6379"
     networks:
       - t_network
 
