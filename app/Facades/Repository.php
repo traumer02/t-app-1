@@ -10,7 +10,7 @@ use Illuminate\Support\Str;
  * @method static Repositories\AuthorRepositoryContract author()
  * @method static Repositories\CategoryRepositoryContract category()
  * @method static Repositories\NewsRepositoryContract news()
- * @method static Repositories\NewsRepositoryContract newsCategory()
+ * @method static Repositories\NewsCategoryRepositoryContract newsCategory()
  */
 class Repository extends Facade
 {
