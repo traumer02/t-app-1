@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Api\Ticket;
+namespace App\Http\Requests\Api\Category;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -13,9 +13,9 @@ class StoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'customer_id' => 'required|integer|exists:customers,id',
-            'subject'     => 'required|string',
-            'text'        => 'required|string',
+            'name'      => 'required|string',
+            'slug'      => 'required|string',
+            'parent_id' => 'nullable|integer|exists:categories,id',
         ];
     }
 }

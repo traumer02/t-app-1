@@ -7,7 +7,10 @@ use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Str;
 
 /**
- * @method static Repositories\TicketRepositoryContract ticket()
+ * @method static Repositories\AuthorRepositoryContract author()
+ * @method static Repositories\CategoryRepositoryContract category()
+ * @method static Repositories\NewsRepositoryContract news()
+ * @method static Repositories\NewsRepositoryContract newsCategory()
  */
 class Repository extends Facade
 {
