@@ -3,13 +3,13 @@
 namespace App\Repositories;
 
 use App\Contracts\Repositories\TicketRepositoryContract;
-use App\Models\Ticket;
+use App\Models\News;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 
 /**
- * @method \App\Models\Ticket getModel()
+ * @method \App\Models\News getModel()
  */
 class TicketRepository extends BaseRepository implements TicketRepositoryContract
 {
@@ -50,9 +50,9 @@ class TicketRepository extends BaseRepository implements TicketRepositoryContrac
     /**
      * @param array $attributes
      *
-     * @return \App\Models\Ticket
+     * @return \App\Models\News
      */
-    public function createOne(array $attributes): Ticket
+    public function createOne(array $attributes): News
     {
         return $this->getModel()
             ->newQuery()

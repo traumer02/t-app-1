@@ -2,7 +2,7 @@
 
 namespace App\Contracts\Repositories;
 
-use App\Models\Ticket;
+use App\Models\News;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
 
@@ -26,9 +26,9 @@ interface TicketRepositoryContract
     /**
      * @param array $attributes
      *
-     * @return \App\Models\Ticket
+     * @return \App\Models\News
      */
-    public function createOne(array $attributes): Ticket;
+    public function createOne(array $attributes): News;
 
     /**
      * @param int                        $customerID

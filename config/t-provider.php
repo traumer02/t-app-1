@@ -9,7 +9,7 @@ return [
     'repositories' => [
         Contracts\Repositories\TicketRepositoryContract::class                => [
             'repository' => Repositories\TicketRepository::class,
-            'model'      => Models\Ticket::class,
+            'model'      => Models\News::class,
         ],
     ],
 

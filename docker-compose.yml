@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: t_app
+    container_name: t_app_1
     restart: unless-stopped
     working_dir: /var/www
     volumes:
@@ -37,7 +37,7 @@ services:
     environment:
       POSTGRES_DB: ${DB_DATABASE:-t_app}
       POSTGRES_USER: ${DB_USERNAME:-admin}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-admin1234}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-secret}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
