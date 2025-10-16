@@ -1,6 +1,6 @@
 Клонируем репозиторий
 
-git clone https://github.com/traumer02/t-app.git
+git clone https://github.com/traumer02/t-app-1.git
 __________________________________________________________________
  Создаём .env
 
